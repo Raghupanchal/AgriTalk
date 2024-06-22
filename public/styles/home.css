@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(131, 178, 131);
+    background-image: url("../image/vast-green-field-with-tree-silhouettes-during-daytime.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; /* Adjusted height for larger logo */
+    width: 100%;
+    background-color: rgb(235, 205, 205);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 20px; /* Adjust padding to balance spacing */
+    z-index: 1000;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.navbar .logo img {
+    height: 80px; /* Adjusted logo height */
+}
+
+.navbar .fixed-container {
+    margin-right: 20px; /* Adjust margin for spacing */
+}
+
+.navbar .profile {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-right: 10px;
+}
+
+.navbar .profile svg {
+    fill: white;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 80px; /* Adjusted top position to align below navbar */
+    left: 0;
+    width: 110px;
+    height: calc(100% - 80px); /* Adjusted height to account for navbar */
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(17px);
+    --webkit-backdrop-filter: blur(17px);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    transition: width 0.3s ease;
+}
+
+.sidebar:hover {
+    width: 260px;
+}
+
+.sidebar .logo {
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 25px 10px 15px;
+}
+
+.sidebar .links {
+    list-style: none;
+    margin-top: 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    height: calc(100% - 140px);
+}
+
+.sidebar .links::-webkit-scrollbar {
+    display: none;
+}
+
+.links li {
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.links li:hover {
+    cursor: pointer;
+    background: #fff;
+}
+
+.links h4 {
+    color: #222;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 10px;
+}
+
+.sidebar:hover .links h4 {
+    display: block;
+}
+
+.links hr {
+    margin: 10px 8px;
+    border: 1px solid #4c4c4c;
+}
+
+.sidebar:hover .links hr {
+    border-color: transparent;
+}
+
+.links li span {
+    padding: 12px 10px;
+}
+
+.links li a {
+    padding: 10px;
+    color: #000;
+    display: none;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sidebar:hover .links li a {
+    display: block;
+}
+
+.bottom-links {
+    margin-top: auto;
+    padding-bottom: 10px;
+}
+
+.links .logout-link {
+    margin-top: 20px;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-top: 80px; /* Adjusted top margin to clear navbar */
+    margin-left: 110px; /* Adjusted left margin to clear sidebar */
+}
+
+.sidebar:hover ~ .content {
+    margin-left: 260px;
+}
+
+.card-body{
+    height: 400px;
+}
+.profile-photo{
+    padding: 8px;
+}
+.create-button{
+    margin-left: auto;
+    padding-right: 50px;
+}

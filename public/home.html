@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./styles/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Linking Google font link for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <style>
+        .card {
+            width: 100%;
+            height: auto;
+        }
+        .card img {
+            height: 100%;
+            object-fit: cover;
+        }
+        .content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#"><img src="./image/png agritalk logo.png" alt="Company Logo" height="80"></a>
+        </div>
+        <div class="create-button">
+            <a href="./create_article.html" class="btn btn-primary">Create +</a>
+        </div>
+        <div class="profile">
+            <div class="profile-info">
+                <p class="card-text">Welcome, <strong id="username">User Name</strong></p>
+            </div>
+            <div class="profile-photo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <aside class="sidebar">
+        <div class="logo"></div>
+        <ul class="links">
+            <li>
+                <span class="material-symbols-outlined">dashboard</span>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <span class="material-symbols-outlined">show_chart</span>
+                <a href="qna.html">QnA</a>
+            </li>
+            <li>
+                <span class="material-symbols-outlined">flag</span>
+                <a href="#">My Posts</a>
+            </li>
+            <hr>
+            <h4>Account</h4>
+            <div class="bottom-links">
+                <li class="settings">
+                    <span class="material-symbols-outlined">settings</span>
+                    <a href="./edit_profile.html">Settings</a>
+                </li>
+                <li class="logout-link">
+                    <span class="material-symbols-outlined">logout</span>
+                    <a href="./login.html">Logout</a>
+                </li>
+            </div>
+        </ul>
+    </aside>
+    <div class="content">
+        <!-- Card component -->
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/150" class="img-fluid rounded-start" alt="Article Image">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Article Title</h5>
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="https://via.placeholder.com/40" class="rounded-circle me-2" alt="Profile Photo">
+                            <p class="mb-0">Posted by <strong>User Name</strong></p>
+                        </div>
+                        <p class="card-text">This is a brief description or excerpt of the article content. It provides a quick overview of what the article is about.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of card component -->
+    </div>
+</body>
+</html>

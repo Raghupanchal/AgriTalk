@@ -1,0 +1,29 @@
+body {
+    background-image: url("../image/green-tea-bud-leaves-green-tea-plantations-morning.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: red;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 350px;
+    max-width: 400px;
+    opacity: 1;
+}
+
+.button {
+    margin: 10px 0;
+}
+
+.form-control {
+    border: solid white 3px;
+}
